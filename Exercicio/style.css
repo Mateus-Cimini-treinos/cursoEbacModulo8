@@ -80,6 +80,80 @@ header a {
     cursor: pointer;
 }
 
+.containerTabela {
+    display: flex;
+    justify-content: center;
+}
+
+table i {
+    color: #522947;
+    cursor: pointer;
+}
+
+table {
+    background-color: grey;
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+table td {
+    text-align: center;
+    padding: 5px 0px;
+}
+
+thead {
+    background-color: #522947;
+    color: #93c0fc;
+    font-size: 25px;
+    padding: 10px 50px;
+    height: 40px;
+    cursor: default;
+}
+
+tbody {
+    background-color: #f7b9e3;
+    font-size: 20px;
+    height: 30px;
+    cursor: default;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f3bee2; 
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f3cfe8; 
+}
+
+tfoot {
+    background-color: #522947;
+    color: #93c0fc;
+    font-size: 20px;
+    padding: 10px 0px;
+    height: 35px;
+    text-align: center;
+}
+
+footer {
+    background-color: #522947;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; 
+    padding: 15px 0;
+    text-align: center;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    font-size: 20px;
+}
+
+
+
+
 
 /* 0px - 480px = smartphones */
 @media (max-width: 480px) {
