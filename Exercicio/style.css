@@ -28,6 +28,7 @@ header {
     border-bottom-left-radius: 50px; 
     border-bottom-right-radius: 50px;
 }
+
 header img {
     width: 50px;
     margin-right: 15px;
@@ -57,6 +58,7 @@ header a {
 }
 
 .adicionarMenu {
+    position: relative;
     background-color: #522947;
     color: #93c0fc;
     display: flex;
@@ -66,6 +68,36 @@ header a {
     padding: 10px 70px;
     gap: 10px;
     cursor: pointer;
+    transition: background-color 0.2s ease;
+    z-index: 0;
+}
+
+.adicionarMenu h2 {
+    color: #93c0fc; 
+    margin: 0;
+}
+
+#adicionarMenu h2, 
+#adicionarMenu i {
+    pointer-events: none; 
+}
+
+.adicionarMenu i {
+    font-size: 18px; 
+    color: #93c0fc;
+}
+
+.adicionarMenu button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 10;
+}
+
+.adicionarMenu:hover {
+    background-color: #8d5c81;
 }
 
 .pesquisarMenu {

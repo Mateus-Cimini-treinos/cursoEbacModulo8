@@ -1,0 +1,17 @@
+.btn {
+    border-style: none;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: rgb(36, 167, 42);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn.blue {
+    background-color: rgb(62, 180, 235);
+}
+
+.btn:hover {
+    box-shadow: inset 200px 0 0 #00000055;
+}

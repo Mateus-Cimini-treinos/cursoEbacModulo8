@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal {
+    position: fixed; /* Modal ocupa toda a tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escurecido */
+    display: flex; /* Flexbox para centralizar */
+    align-items: center;
+    justify-content: center;
+    z-index: 999; /* Acima de outros elementos */
+}
+
+.modal-content {
+    background-color: #522947; /* Cor de fundo do modal */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    width: 90vw; /* Largura responsiva */
+    max-width: 500px; /* Largura máxima */
+    overflow: hidden; /* Oculta conteúdo que excede o limite */
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between; /* Espaço entre o título e o botão de fechar */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 15px;
+    background-color: #422237; /* Cor de fundo do cabeçalho */
+}
+
+.modal-title {
+    color: #93c0fc; /* Cor do título */
+    font-size: 24px; /* Tamanho da fonte */
+}
+
+.modal-close {
+    background: none; /* Remover fundo */
+    border: none; /* Remover borda */
+    color: #fff; /* Cor do botão de fechar */
+    font-size: 24px; /* Tamanho do ícone */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: color 0.3s; /* Transição suave */
+}
+
+.modal-close:hover {
+    color: #93c0fc; /* Mudar cor ao passar o mouse */
+}
+
+.modal-body {
+    padding: 20px; /* Preenchimento do corpo do modal */
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column; /* Layout em coluna */
+    gap: 15px; /* Espaçamento entre os campos */
+}
+
+.modal-form label {
+    color: #fff; /* Cor das labels */
+}
+
+.modal-form input,
+.modal-form textarea {
+    padding: 10px; /* Preenchimento interno */
+    border: none; /* Remover borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #d3d3d3; /* Cor de fundo dos campos */
+    color: #333; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.modal-footer button {
+    padding: 10px 20px; /* Preenchimento dos botões */
+    border: none; /* Remover bordas */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    color: #fff; /* Cor do texto dos botões */
+    background-color: #93c0fc; /* Cor de fundo dos botões */
+    transition: background-color 0.3s; /* Transição suave */
+    margin-left: 10px; /* Espaçamento à esquerda para o botão de salvar */
+}
+
+.modal-footer .modal-cancel {
+    margin-right: 10px; /* Espaçamento à direita para o botão de cancelar */
+}
+
+.modal-footer button {
+    padding: 10px 20px; /* Preenchimento dos botões */
+    border: none; /* Remover bordas */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    color: #fff; /* Cor do texto dos botões */
+    background-color: #93c0fc; /* Cor de fundo dos botões */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.modal-footer button:hover {
+    background-color: #7aa8d6; /* Efeito de hover nos botões */
+}
+
+.modal-cancel {
+    background-color: #ff4c4c; /* Cor do botão de cancelar */
+}
+
+.modal-cancel:hover {
+    background-color: #e63939; /* Efeito de hover no botão de cancelar */
+}
