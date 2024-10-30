@@ -168,6 +168,13 @@ tfoot {
     text-align: center;
 }
 
+.tabela-scroll {
+    max-height: 400px; /* Defina a altura máxima desejada */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical */
+    border: 1px solid #ccc; /* Adiciona uma borda opcional */
+    margin-top: 10px; /* Espaço acima da tabela */
+}
+
 footer {
     background-color: #522947;
     color: #fff;
@@ -189,7 +196,44 @@ footer {
 
 /* 0px - 480px = smartphones */
 @media (max-width: 480px) {
-    h1 {
-        color: red;
+        body {
+            font-size: 14px; /* Reduz o tamanho da fonte para melhor legibilidade em telas pequenas */
+        }
+    
+        .containerMenus {
+            flex-direction: column; /* Empilha os menus em uma coluna */
+            align-items: center; /* Centraliza os itens */
+            padding: 10px; /* Adiciona um pouco de padding */
+        }
+    
+        .contatosMenu,
+        .adicionarMenu,
+        .pesquisa {
+            flex: 1 1 100%; /* Cada menu ocupa 100% da largura */
+            margin: 10px 0; /* Espaçamento vertical entre os menus */
+        }
+    
+        .pesquisa input {
+            width: 100%; /* O campo de pesquisa ocupa toda a largura do menu */
+            padding: 8px; /* Aumenta o padding para um toque mais fácil */
+        }
+    
+        .tabela-scroll {
+            max-height: 200px; /* Ajusta a altura máxima da tabela */
+            overflow-y: auto; /* Mantém a barra de rolagem se necessário */
+        }
+    
+        table {
+            width: 100%; /* A tabela ocupa toda a largura disponível */
+            font-size: 12px; /* Reduz o tamanho da fonte da tabela */
+        }
+    
+        th, td {
+            padding: 8px; /* Ajusta o padding das células da tabela */
+        }
+    
+        .btn-delete {
+            padding: 5px; /* Ajusta o padding do botão para facilitar o toque */
+        }
     }
-}
+    
