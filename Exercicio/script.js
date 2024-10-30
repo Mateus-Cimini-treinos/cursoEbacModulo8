@@ -32,8 +32,14 @@ cancelBtn.addEventListener('click', () => {
 
 // botao de salvar contato (por enqianto limpa os campos e fecha o modal)
 saveBtn.addEventListener('click', () => {
+
+    const nomeValor = nome.value;  // Captura o valor do nome
+    const numeroValor = numero.value;  // Captura o valor do número
+    
     inputs.forEach(input => input.value = ''); 
     modal.classList.remove('show');
+    
+    console.log(`nome: ${nomeValor} numero: ${numeroValor}`);
 });
 
 
@@ -54,4 +60,10 @@ botao.addEventListener("click" , () => {
 
 // TABELA
 
-const nome =
+const form = document.getElementById('modal-form');
+const nome = document.getElementById('item-name');
+const numero = document.getElementById('item-number');
+
+
+
+
