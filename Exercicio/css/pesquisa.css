@@ -1,0 +1,44 @@
+.pesquisa {
+    position: relative;
+    height: 50px;
+}
+
+.pesquisa .pergunta {
+    background-color: #8d5c81;
+    border: 0;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    transition: width 0.3s ease;
+}
+
+.botao {
+    background-color: #522947;
+    border: 0;
+    color: #93c0fc;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+}
+
+.botao:focus,
+.pergunta:focus {
+    outline: none;
+    color: aliceblue;
+}
+
+.pesquisa.active .pergunta{
+    width: 200px;
+}
+
+.pesquisa.active .botao{
+    transform: translateX(198px);
+}

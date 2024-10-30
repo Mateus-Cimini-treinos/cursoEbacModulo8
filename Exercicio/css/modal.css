@@ -16,7 +16,17 @@
     align-items: center;
     justify-content: center;
     z-index: 999; /* Acima de outros elementos */
+    display: none;
 }
+
+.modal.show {
+    display: flex; /* Mostra o modal ao adicionar a classe .show */
+}
+
+.modal.hidden {
+    display: none; /* Classe para ocultar o modal */
+}
+
 
 .modal-content {
     background-color: #522947; /* Cor de fundo do modal */

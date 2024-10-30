@@ -7,9 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="modal.css">
-    <link rel="stylesheet" href="btn.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/pesquisa.css">
     <title>Rift Contacts</title>
 </head>
 <body>
@@ -32,11 +33,11 @@
                 </button>
             </div>
             
-
-            <div class="pesquisarMenu">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <h2>Pesquisar</h2>
+            <div class="pesquisa">
+                <input type="text" class="pergunta" placeholder="Pesquise..." />
+                <button class="botao"><i class="fas fa-search"></i></button>
             </div>
+            
         </div>
 
         <div class="containerTabela">
@@ -85,7 +86,7 @@
                         <label for="item-name">Digite o Nome:</label>
                         <input type="text" id="item-name" name="item-name" required>
                         <label for="item-description">Digite o Numero:</label>
-                        <textarea id="item-description" name="item-description" required></textarea>
+                        <input type="number" name="item-description" required>
                     </form>
                 </div>
                 <div class="modal-footer">
